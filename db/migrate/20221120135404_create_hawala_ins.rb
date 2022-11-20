@@ -7,12 +7,13 @@ class CreateHawalaIns < ActiveRecord::Migration[7.0]
       t.string :from_src
       t.string :to_trgt
       t.bigint :amount
+      t.bigint :exchange_rate
       t.bigint :amount_exchange
       t.string :description
       t.boolean :pay
       t.boolean :status
       t.references :sarafis, null: false, foreign_key: true
-      t.references :partners, null: false, foreign_key: true
+      t.references :sarafi_partners, null: false, foreign_key: true
 
       t.timestamps
     end
