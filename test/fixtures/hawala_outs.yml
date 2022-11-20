@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hawala_no: 
+  currency_src: MyString
+  currency_trgt: MyString
+  from_src: MyString
+  to_trgt: MyString
+  amount: 
+  misc_tax: 
+  description: MyString
+  pay: false
+  status: false
+  sarafis: one
+  partners: one
+  customers: one
+
+two:
+  hawala_no: 
+  currency_src: MyString
+  currency_trgt: MyString
+  from_src: MyString
+  to_trgt: MyString
+  amount: 
+  misc_tax: 
+  description: MyString
+  pay: false
+  status: false
+  sarafis: two
+  partners: two
+  customers: two

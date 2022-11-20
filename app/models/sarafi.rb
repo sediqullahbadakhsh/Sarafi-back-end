@@ -1,0 +1,2 @@
+class Sarafi < ApplicationRecord
+end

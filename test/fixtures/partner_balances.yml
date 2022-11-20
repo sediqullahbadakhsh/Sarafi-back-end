@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount_payed: 
+  type: 
+  partners: one
+
+two:
+  amount_payed: 
+  type: 
+  partners: two

@@ -1,0 +1,2 @@
+class SarafiPartner < ApplicationRecord
+end

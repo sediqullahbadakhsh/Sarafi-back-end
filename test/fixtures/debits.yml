@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 
+  description: MyString
+  from_src: 
+  to_trgt: 
+  sarafis: one
+
+two:
+  amount: 
+  description: MyString
+  from_src: 
+  to_trgt: 
+  sarafis: two

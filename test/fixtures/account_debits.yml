@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 
+  debit_from_accounts: one
+  bank_accounts: one
+
+two:
+  amount: 
+  debit_from_accounts: two
+  bank_accounts: two

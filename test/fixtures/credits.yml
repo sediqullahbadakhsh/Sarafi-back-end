@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 
+  description: MyString
+  recipt_date: 2022-11-20
+  recipt_time: MyString
+  recipt_number: 
+  bank_accounts: one
+  customers: one
+
+two:
+  amount: 
+  description: MyString
+  recipt_date: 2022-11-20
+  recipt_time: MyString
+  recipt_number: 
+  bank_accounts: two
+  customers: two

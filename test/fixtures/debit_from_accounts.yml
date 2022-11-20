@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 
+  currency_src: MyString
+  currency_trgt: MyString
+  exchange_rate: 
+  exchange_amount: 
+  sarafis: one
+
+two:
+  amount: 
+  currency_src: MyString
+  currency_trgt: MyString
+  exchange_rate: 
+  exchange_amount: 
+  sarafis: two

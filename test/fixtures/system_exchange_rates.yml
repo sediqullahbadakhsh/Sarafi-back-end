@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  currency_src_trgt: MyString
+  rate: 
+  users: one
+
+two:
+  currency_src_trgt: MyString
+  rate: 
+  users: two
