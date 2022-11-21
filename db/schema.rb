@@ -291,6 +291,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_20_151333) do
   add_foreign_key "credits", "customers", column: "customers_id"
   add_foreign_key "customers", "sarafis", column: "sarafis_id"
   add_foreign_key "debit_from_accounts", "sarafis", column: "sarafis_id"
+  add_foreign_key "debits", "customers", column: "from_src"
+  add_foreign_key "debits", "customers", column: "to_trgt"
   add_foreign_key "debits", "sarafis", column: "sarafis_id"
   add_foreign_key "hawala_ins", "sarafi_partners", column: "sarafi_partners_id"
   add_foreign_key "hawala_ins", "sarafis", column: "sarafis_id"
