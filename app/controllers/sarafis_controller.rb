@@ -1,4 +1,4 @@
-class SarafiController < ApplicationController
+class SarafisController < ApplicationController
     def index
         render json: Sarafi.all
     end
@@ -16,10 +16,14 @@ class SarafiController < ApplicationController
         render json: Sarafi.find(params[:id])
     end
 
+    def edit
+        @sarafi = Sarafi.find(params[:id])
+        render :edit
+    end
+
     def update
-        @sarafi = Sarafi.find_by(params[:id])
-        @sarafi.update(Sarafi_params)
-        if @sarafi.save
+        @sarafi = Sarafi.find(params[:id])
+        if @sarafi.update(sarafi_params)
             render json: { status: 201, message: 'updated created successfully!' }
         else
             render json: { status: 401, message: 'Sarafi did not updated successfully!'}
