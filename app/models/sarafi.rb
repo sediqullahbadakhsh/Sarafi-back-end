@@ -1,3 +1,3 @@
 class Sarafi < ApplicationRecord
-    # has_many :customer, optional:true
+    has_many :user_sarafis, dependent: :destroy
 end

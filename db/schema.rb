@@ -273,6 +273,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_20_151333) do
     t.string "email"
     t.string "address"
     t.string "photo"
+    t.string "password"
+    t.boolean "status"
     t.bigint "user_roles_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
