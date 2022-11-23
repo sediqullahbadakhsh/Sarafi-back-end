@@ -1,4 +1,13 @@
 class UserSarafisController < ApplicationController
+    
+    def userIndex
+        render json: UserSarafi.find(:users_id)
+
+    end
+    def sarafiIndex
+        render json: UserSarafi.find(:sarafis_id)
+    end
+    
     def create
         @user = User.find(params[:id])
         @sarafi = Sarafi.find(params[:id])
