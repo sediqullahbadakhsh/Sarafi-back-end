@@ -2,9 +2,8 @@ class UserSarafisController < ApplicationController
     
     def userIndex
         render json: UserSarafi.find(:users_id)
-
     end
-    def sarafiIndex
+    def index
         render json: UserSarafi.find(:sarafis_id)
     end
     
