@@ -57,9 +57,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_20_151333) do
 
   create_table "credit_cards", force: :cascade do |t|
     t.string "country"
-    t.bigint "credit_balance"
+    t.bigint "aproximat_amount"
+    t.bigint "actual_amount"
     t.bigint "benefit"
-    t.bigint "amount"
     t.bigint "users_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -99,6 +99,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_20_151333) do
     t.date "recipt_date"
     t.string "recipt_time"
     t.bigint "recipt_number"
+    t.string "currency"
     t.bigint "bank_accounts_id", null: false
     t.bigint "customers_id", null: false
     t.datetime "created_at", null: false
@@ -196,7 +197,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_20_151333) do
   end
 
   create_table "sarafi_exchange_rates", force: :cascade do |t|
-    t.string "currency_src_trgt"
+    t.string "currency_src"
+    t.string "currency_trgt"
     t.bigint "rate"
     t.bigint "sarafis_id", null: false
     t.datetime "created_at", null: false
@@ -240,7 +242,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_20_151333) do
   end
 
   create_table "system_exchange_rates", force: :cascade do |t|
-    t.string "currency_src_trgt"
+    t.string "currency_src"
+    t.string "currency_trgt"
     t.bigint "rate"
     t.bigint "users_id", null: false
     t.datetime "created_at", null: false
