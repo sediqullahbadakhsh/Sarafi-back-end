@@ -1,8 +1,7 @@
-class UserSarafisController < ApplicationController
+class UserSarafissController < ApplicationController
     
-   
     def index
-        render json: UserSarafi.where(sarafis_id: params[:sarafis_id])
+        render json: UserSarafi.where(users_id: params[:users_id])
     end
     
     def create
