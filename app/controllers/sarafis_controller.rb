@@ -1,6 +1,13 @@
 class SarafisController < ApplicationController
+    before_action :authorize_request, except: :create
+
     def index
         render json: Sarafi.all
+    end
+
+    def assignedSarafi
+        render json: UserSarafi.where(sarafis_id: params[:users_id])
+
     end
     
     def create
